@@ -21,7 +21,7 @@ namespace Generics
              Console.WriteLine("Enter the third number:");
              int t = Convert.ToInt32(Console.ReadLine());*/
 
-            Console.WriteLine("Enter the First number:");
+            /*Console.WriteLine("Enter the First number:");
             float f = Convert.ToSingle(Console.ReadLine());
 
             Console.WriteLine("Enter the second number:");
@@ -29,6 +29,18 @@ namespace Generics
 
             Console.WriteLine("Enter the third number:");
             float t = Convert.ToSingle(Console.ReadLine());
+
+            SimpleClass simple = new SimpleClass(f, s, t);
+            simple.findMax();*/
+
+            Console.WriteLine("Enter the First string:");
+            string f = Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine("Enter the second string:");
+            string s = Convert.ToString(Console.ReadLine());
+
+            Console.WriteLine("Enter the third string:");
+            string t = Convert.ToString(Console.ReadLine());
 
             SimpleClass simple = new SimpleClass(f, s, t);
             simple.findMax();
