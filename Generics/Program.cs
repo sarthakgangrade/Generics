@@ -12,38 +12,49 @@ namespace Generics
 
         static void Main(string[] args)
         {
-            /* Console.WriteLine("Enter the First number:");
+             Console.WriteLine("Enter the First number:");
              int f = Convert.ToInt32(Console.ReadLine());
 
              Console.WriteLine("Enter the second number:");
              int s = Convert.ToInt32(Console.ReadLine());
 
              Console.WriteLine("Enter the third number:");
-             int t = Convert.ToInt32(Console.ReadLine());*/
+             int t = Convert.ToInt32(Console.ReadLine());
 
-            /*Console.WriteLine("Enter the First number:");
-            float f = Convert.ToSingle(Console.ReadLine());
+            //calling maxMethod()
+            GenericsClass<int> genericMethod = new GenericsClass<int>(f, s, t);
+            genericMethod.FindMax(f, s, t);
 
-            Console.WriteLine("Enter the second number:");
-            float s = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine("Enter the First float number:");
+            float a = Convert.ToSingle(Console.ReadLine());
 
-            Console.WriteLine("Enter the third number:");
-            float t = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine("Enter the second float number:");
+            float b = Convert.ToSingle(Console.ReadLine());
 
-            SimpleClass simple = new SimpleClass(f, s, t);
-            simple.findMax();*/
+            Console.WriteLine("Enter the third float number:");
+            float c = Convert.ToSingle(Console.ReadLine());
+
+            //passing float values to maxMethod()
+            GenericsClass<float> genericMethod1 = new GenericsClass<float>(a, b, c);
+            genericMethod1.FindMax(a, b, c);
 
             Console.WriteLine("Enter the First string:");
-            string f = Convert.ToString(Console.ReadLine());
+            string x = Convert.ToString(Console.ReadLine());
 
             Console.WriteLine("Enter the second string:");
-            string s = Convert.ToString(Console.ReadLine());
+            string y = Convert.ToString(Console.ReadLine());
 
             Console.WriteLine("Enter the third string:");
-            string t = Convert.ToString(Console.ReadLine());
+            string z = Convert.ToString(Console.ReadLine());
 
-            SimpleClass simple = new SimpleClass(f, s, t);
-            simple.findMax();
+            
+            
+            //passing string values to maxMethod()
+            GenericsClass<string> genericMethod2 = new GenericsClass<string>(x, y, z);
+            genericMethod2.FindMax(x, y, z);
+
+            Console.ReadLine();
+
         }
     }
 }
