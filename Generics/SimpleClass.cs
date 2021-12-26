@@ -8,9 +8,9 @@ namespace Generics
 {
     class SimpleClass
     {
-        public int first, second, third;
+        public float first, second, third;
         
-        public SimpleClass(int first, int second, int third)
+        public SimpleClass(float first, float second, float third)
         {
             this.first = first;
             this.second = second;
